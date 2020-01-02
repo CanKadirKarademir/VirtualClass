@@ -10,7 +10,7 @@ namespace SanalSınıfOtomasyonu
 {
     public static class VeritabaniIslemleri
     {
-        private static readonly string _connectionString = @"Data Source=LAPTOP-6UFOC7K3\MSSQLSERVER01; Initial Catalog=SanalSinifDB; Integrated Security=true;";
+        private static readonly string _connectionString = @"Data Source=; Initial Catalog=SanalSinifDB; Integrated Security=true;";
 
         public static Int32 ExecuteNonQuery(String commandText,
             SqlParameter[] parameters = null, CommandType commandType = CommandType.Text)
@@ -20,7 +20,8 @@ namespace SanalSınıfOtomasyonu
                 using (SqlCommand cmd = new SqlCommand(commandText, conn))
                 {
                     cmd.CommandType = commandType;
-                    cmd.Parameters.AddRange(parameters);
+                    if (parameters != null)
+                        cmd.Parameters.AddRange(parameters);
 
                     conn.Open();
                     return cmd.ExecuteNonQuery();
@@ -36,7 +37,8 @@ namespace SanalSınıfOtomasyonu
                 using (SqlCommand cmd = new SqlCommand(commandText, conn))
                 {
                     cmd.CommandType = commandType;
-                    cmd.Parameters.AddRange(parameters);
+                    if (parameters != null)
+                        cmd.Parameters.AddRange(parameters);
 
                     conn.Open();
                     return cmd.ExecuteScalar();
@@ -56,8 +58,6 @@ namespace SanalSınıfOtomasyonu
                     cmd.Parameters.AddRange(parameters);
 
                 conn.Open();
-                // When using CommandBehavior.CloseConnection, the connection will be closed when the   
-                // IDataReader is closed.  
                 SqlDataReader reader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
 
                 return reader;

@@ -33,15 +33,12 @@
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.btnGiris = new DevExpress.XtraEditors.SimpleButton();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.cmbKullaniciTuru = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtSifre = new DevExpress.XtraEditors.TextEdit();
             this.txtKullaniciAd = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbKullaniciTuru.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSifre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAd.Properties)).BeginInit();
             this.SuspendLayout();
@@ -68,67 +65,46 @@
             this.btnGiris.AppearanceHovered.Options.UseBorderColor = true;
             this.btnGiris.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.btnGiris.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnGiris.ImageOptions.Image")));
-            this.btnGiris.Location = new System.Drawing.Point(477, 487);
+            this.btnGiris.Location = new System.Drawing.Point(409, 347);
+            this.btnGiris.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGiris.Name = "btnGiris";
-            this.btnGiris.Size = new System.Drawing.Size(244, 54);
+            this.btnGiris.Size = new System.Drawing.Size(209, 44);
             this.btnGiris.TabIndex = 17;
             this.btnGiris.Text = "GİRİŞ";
+            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
             // pictureEdit1
             // 
             this.pictureEdit1.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(414, 32);
+            this.pictureEdit1.Location = new System.Drawing.Point(355, 26);
+            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit1.Properties.ZoomAccelerationFactor = 1D;
-            this.pictureEdit1.Size = new System.Drawing.Size(213, 135);
+            this.pictureEdit1.Size = new System.Drawing.Size(183, 110);
             this.pictureEdit1.TabIndex = 10;
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl4.Appearance.ForeColor = System.Drawing.Color.DarkGray;
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Appearance.Options.UseForeColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(261, 408);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(199, 35);
-            this.labelControl4.TabIndex = 24;
-            this.labelControl4.Text = "Kullanıcı Türü:";
-            // 
-            // cmbKullaniciTuru
-            // 
-            this.cmbKullaniciTuru.Location = new System.Drawing.Point(477, 403);
-            this.cmbKullaniciTuru.Name = "cmbKullaniciTuru";
-            this.cmbKullaniciTuru.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cmbKullaniciTuru.Properties.Appearance.Options.UseFont = true;
-            this.cmbKullaniciTuru.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbKullaniciTuru.Properties.Items.AddRange(new object[] {
-            "Admin",
-            "Öğrenci",
-            "Öğretmen"});
-            this.cmbKullaniciTuru.Size = new System.Drawing.Size(244, 40);
-            this.cmbKullaniciTuru.TabIndex = 23;
             // 
             // txtSifre
             // 
-            this.txtSifre.Location = new System.Drawing.Point(477, 340);
+            this.txtSifre.EditValue = "1234";
+            this.txtSifre.Location = new System.Drawing.Point(409, 276);
+            this.txtSifre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSifre.Properties.Appearance.Options.UseFont = true;
-            this.txtSifre.Size = new System.Drawing.Size(244, 40);
+            this.txtSifre.Size = new System.Drawing.Size(209, 34);
             this.txtSifre.TabIndex = 22;
             // 
             // txtKullaniciAd
             // 
-            this.txtKullaniciAd.Location = new System.Drawing.Point(477, 280);
+            this.txtKullaniciAd.EditValue = "Kadir";
+            this.txtKullaniciAd.Location = new System.Drawing.Point(409, 228);
+            this.txtKullaniciAd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtKullaniciAd.Name = "txtKullaniciAd";
             this.txtKullaniciAd.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtKullaniciAd.Properties.Appearance.Options.UseFont = true;
-            this.txtKullaniciAd.Size = new System.Drawing.Size(244, 40);
+            this.txtKullaniciAd.Size = new System.Drawing.Size(209, 34);
             this.txtKullaniciAd.TabIndex = 21;
             // 
             // labelControl3
@@ -137,9 +113,10 @@
             this.labelControl3.Appearance.ForeColor = System.Drawing.Color.DarkGray;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(380, 345);
+            this.labelControl3.Location = new System.Drawing.Point(326, 280);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(70, 35);
+            this.labelControl3.Size = new System.Drawing.Size(57, 26);
             this.labelControl3.TabIndex = 20;
             this.labelControl3.Text = "Sifre:";
             // 
@@ -149,9 +126,10 @@
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.DarkGray;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(271, 282);
+            this.labelControl2.Location = new System.Drawing.Point(232, 229);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(179, 35);
+            this.labelControl2.Size = new System.Drawing.Size(147, 26);
             this.labelControl2.TabIndex = 19;
             this.labelControl2.Text = "Kullanıcı Adı:";
             // 
@@ -161,19 +139,19 @@
             this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Gray;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(298, 182);
+            this.labelControl1.Location = new System.Drawing.Point(255, 148);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(423, 74);
+            this.labelControl1.Size = new System.Drawing.Size(342, 60);
             this.labelControl1.TabIndex = 18;
             this.labelControl1.Text = "Kullanıcı Girisi";
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AcceptButton = this.btnGiris;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1036, 640);
-            this.Controls.Add(this.labelControl4);
-            this.Controls.Add(this.cmbKullaniciTuru);
+            this.ClientSize = new System.Drawing.Size(888, 520);
             this.Controls.Add(this.txtSifre);
             this.Controls.Add(this.txtKullaniciAd);
             this.Controls.Add(this.labelControl3);
@@ -181,12 +159,14 @@
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.btnGiris);
             this.Controls.Add(this.pictureEdit1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("Login.IconOptions.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sanal Sınıf";
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbKullaniciTuru.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSifre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAd.Properties)).EndInit();
             this.ResumeLayout(false);
@@ -199,8 +179,6 @@
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
         private DevExpress.XtraEditors.SimpleButton btnGiris;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.ComboBoxEdit cmbKullaniciTuru;
         private DevExpress.XtraEditors.TextEdit txtSifre;
         private DevExpress.XtraEditors.TextEdit txtKullaniciAd;
         private DevExpress.XtraEditors.LabelControl labelControl3;

@@ -22,7 +22,7 @@ namespace SanalSınıfOtomasyonu
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
-            Application.Run(new OgretmenSayfasi());
+            Application.Run(new Login());
         }
     }
 }
