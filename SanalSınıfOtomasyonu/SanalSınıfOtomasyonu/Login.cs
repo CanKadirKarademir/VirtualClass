@@ -25,8 +25,8 @@ namespace SanalSınıfOtomasyonu
                 new SqlParameter("@KullaniciAdi",SqlDbType.NVarChar),
                 new SqlParameter("@KullaniciSifre",SqlDbType.NVarChar)
             };
-            parameters[0].Value = txtKullaniciAd.Text;
-            parameters[1].Value = txtSifre.Text;
+            parameters[0].Value = VeritabaniIslemleri.degistir(txtKullaniciAd.Text);
+            parameters[1].Value = VeritabaniIslemleri.degistir(txtSifre.Text);
             DataTable dataTable = VeritabaniIslemleri.ExecuteDataTable( "Giris",
                 parameters, CommandType.StoredProcedure);
             if (dataTable.Rows.Count > 0)

@@ -95,6 +95,7 @@
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSifre.Properties.Appearance.Options.UseFont = true;
+            this.txtSifre.Properties.MaxLength = 50;
             this.txtSifre.Size = new System.Drawing.Size(209, 34);
             this.txtSifre.TabIndex = 22;
             // 
@@ -106,6 +107,7 @@
             this.txtKullaniciAd.Name = "txtKullaniciAd";
             this.txtKullaniciAd.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtKullaniciAd.Properties.Appearance.Options.UseFont = true;
+            this.txtKullaniciAd.Properties.MaxLength = 50;
             this.txtKullaniciAd.Size = new System.Drawing.Size(209, 34);
             this.txtKullaniciAd.TabIndex = 21;
             // 

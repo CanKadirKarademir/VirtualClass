@@ -67,10 +67,8 @@
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             this.btnIstatistik = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.txtKullaniciAdi = new DevExpress.XtraEditors.TextEdit();
             this.txtOgrenciAdSoyad = new DevExpress.XtraEditors.TextEdit();
             this.txtOgrenciNo = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.gridOgrenciBilgileri = new DevExpress.XtraGrid.GridControl();
@@ -103,7 +101,6 @@
             this.xtraTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOgrenciAdSoyad.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOgrenciNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridOgrenciBilgileri)).BeginInit();
@@ -219,6 +216,7 @@
             this.txtSoru.Name = "txtSoru";
             this.txtSoru.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSoru.Properties.Appearance.Options.UseFont = true;
+            this.txtSoru.Properties.MaxLength = 300;
             this.txtSoru.Size = new System.Drawing.Size(692, 28);
             this.txtSoru.TabIndex = 11;
             // 
@@ -257,6 +255,7 @@
             this.txtD.Name = "txtD";
             this.txtD.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtD.Properties.Appearance.Options.UseFont = true;
+            this.txtD.Properties.MaxLength = 50;
             this.txtD.Size = new System.Drawing.Size(297, 28);
             this.txtD.TabIndex = 8;
             // 
@@ -267,6 +266,7 @@
             this.txtC.Name = "txtC";
             this.txtC.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtC.Properties.Appearance.Options.UseFont = true;
+            this.txtC.Properties.MaxLength = 50;
             this.txtC.Size = new System.Drawing.Size(297, 28);
             this.txtC.TabIndex = 7;
             // 
@@ -277,6 +277,7 @@
             this.txtB.Name = "txtB";
             this.txtB.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtB.Properties.Appearance.Options.UseFont = true;
+            this.txtB.Properties.MaxLength = 50;
             this.txtB.Size = new System.Drawing.Size(297, 28);
             this.txtB.TabIndex = 6;
             // 
@@ -331,6 +332,7 @@
             this.txtA.Name = "txtA";
             this.txtA.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtA.Properties.Appearance.Options.UseFont = true;
+            this.txtA.Properties.MaxLength = 50;
             this.txtA.Size = new System.Drawing.Size(297, 28);
             this.txtA.TabIndex = 0;
             // 
@@ -421,6 +423,7 @@
             this.txtSoru2.Name = "txtSoru2";
             this.txtSoru2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSoru2.Properties.Appearance.Options.UseFont = true;
+            this.txtSoru2.Properties.MaxLength = 300;
             this.txtSoru2.Size = new System.Drawing.Size(364, 28);
             this.txtSoru2.TabIndex = 20;
             // 
@@ -438,6 +441,7 @@
             "B",
             "C",
             "D"});
+            this.cmbDogruCevap2.Properties.ReadOnly = true;
             this.cmbDogruCevap2.Size = new System.Drawing.Size(86, 28);
             this.cmbDogruCevap2.TabIndex = 19;
             // 
@@ -459,6 +463,7 @@
             this.txtD2.Name = "txtD2";
             this.txtD2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtD2.Properties.Appearance.Options.UseFont = true;
+            this.txtD2.Properties.MaxLength = 50;
             this.txtD2.Size = new System.Drawing.Size(190, 28);
             this.txtD2.TabIndex = 17;
             // 
@@ -469,6 +474,7 @@
             this.txtC2.Name = "txtC2";
             this.txtC2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtC2.Properties.Appearance.Options.UseFont = true;
+            this.txtC2.Properties.MaxLength = 50;
             this.txtC2.Size = new System.Drawing.Size(190, 28);
             this.txtC2.TabIndex = 16;
             // 
@@ -479,6 +485,7 @@
             this.txtB2.Name = "txtB2";
             this.txtB2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtB2.Properties.Appearance.Options.UseFont = true;
+            this.txtB2.Properties.MaxLength = 50;
             this.txtB2.Size = new System.Drawing.Size(190, 28);
             this.txtB2.TabIndex = 15;
             // 
@@ -533,6 +540,7 @@
             this.txtA2.Name = "txtA2";
             this.txtA2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtA2.Properties.Appearance.Options.UseFont = true;
+            this.txtA2.Properties.MaxLength = 50;
             this.txtA2.Size = new System.Drawing.Size(190, 28);
             this.txtA2.TabIndex = 9;
             // 
@@ -594,10 +602,8 @@
             // 
             // groupControl3
             // 
-            this.groupControl3.Controls.Add(this.txtKullaniciAdi);
             this.groupControl3.Controls.Add(this.txtOgrenciAdSoyad);
             this.groupControl3.Controls.Add(this.txtOgrenciNo);
-            this.groupControl3.Controls.Add(this.labelControl11);
             this.groupControl3.Controls.Add(this.labelControl10);
             this.groupControl3.Controls.Add(this.labelControl9);
             this.groupControl3.Location = new System.Drawing.Point(669, 23);
@@ -607,16 +613,6 @@
             this.groupControl3.TabIndex = 1;
             this.groupControl3.Text = "Ögrenci  Bilgileri:";
             // 
-            // txtKullaniciAdi
-            // 
-            this.txtKullaniciAdi.Location = new System.Drawing.Point(165, 166);
-            this.txtKullaniciAdi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtKullaniciAdi.Name = "txtKullaniciAdi";
-            this.txtKullaniciAdi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKullaniciAdi.Properties.Appearance.Options.UseFont = true;
-            this.txtKullaniciAdi.Size = new System.Drawing.Size(172, 28);
-            this.txtKullaniciAdi.TabIndex = 5;
-            // 
             // txtOgrenciAdSoyad
             // 
             this.txtOgrenciAdSoyad.Location = new System.Drawing.Point(165, 118);
@@ -624,6 +620,7 @@
             this.txtOgrenciAdSoyad.Name = "txtOgrenciAdSoyad";
             this.txtOgrenciAdSoyad.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtOgrenciAdSoyad.Properties.Appearance.Options.UseFont = true;
+            this.txtOgrenciAdSoyad.Properties.MaxLength = 50;
             this.txtOgrenciAdSoyad.Size = new System.Drawing.Size(172, 28);
             this.txtOgrenciAdSoyad.TabIndex = 4;
             // 
@@ -634,19 +631,9 @@
             this.txtOgrenciNo.Name = "txtOgrenciNo";
             this.txtOgrenciNo.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtOgrenciNo.Properties.Appearance.Options.UseFont = true;
+            this.txtOgrenciNo.Properties.MaxLength = 50;
             this.txtOgrenciNo.Size = new System.Drawing.Size(172, 28);
             this.txtOgrenciNo.TabIndex = 3;
-            // 
-            // labelControl11
-            // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(41, 169);
-            this.labelControl11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(101, 22);
-            this.labelControl11.TabIndex = 2;
-            this.labelControl11.Text = "Kullanıcı Adı:";
             // 
             // labelControl10
             // 
@@ -741,7 +728,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOgrenciAdSoyad.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOgrenciNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridOgrenciBilgileri)).EndInit();
@@ -797,7 +783,5 @@
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.LookUpEdit lookUpTur;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
-        private DevExpress.XtraEditors.TextEdit txtKullaniciAdi;
-        private DevExpress.XtraEditors.LabelControl labelControl11;
     }
 }

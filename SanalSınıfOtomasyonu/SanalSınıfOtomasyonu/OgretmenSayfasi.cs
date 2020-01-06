@@ -52,7 +52,7 @@ namespace SanalSınıfOtomasyonu
         {
             bool isTrue = true;
             
-            if (lookUpTur.ItemIndex ==0|| txtSoru.Text =="" || txtA.Text == "" || txtB.Text == "" ||
+            if (lookUpTur.ItemIndex == null || txtSoru.Text =="" || txtA.Text == "" || txtB.Text == "" ||
                 txtC.Text == "" || txtD.Text == "" || cmbDogruCevap.SelectedItem == null)
                 isTrue = false;
             else
@@ -94,7 +94,7 @@ namespace SanalSınıfOtomasyonu
                 parameters[6].Value = cmbDogruCevap.SelectedItem;
                 int eklemeSonuc = VeritabaniIslemleri.ExecuteNonQuery("SoruEkleme", parameters, CommandType.StoredProcedure);
 
-                if (eklemeSonuc == 0)
+                if (eklemeSonuc == -1)
                 {
                     XtraMessageBox.Show("Soru Ekleme İşlemi Yapılamadı", "Hatalı İşlem!", MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
@@ -224,14 +224,14 @@ namespace SanalSınıfOtomasyonu
             _ogrenci.OgrenciId = Convert.ToInt32(gridView2.GetFocusedRowCellValue("OgrenciId"));
 
 
-            txtKullaniciAdi.Text = _ogrenci.KullaniciAd;
             txtOgrenciNo.Text = _ogrenci.OgrenciNo.ToString();
             txtOgrenciAdSoyad.Text = _ogrenci.KullaniciAdSoyad;
         }
 
         private void btnIstatistik_Click(object sender, EventArgs e)
         {
-
+            İstatistik frm = new İstatistik();
+            frm.Show();
         }
     }
 }

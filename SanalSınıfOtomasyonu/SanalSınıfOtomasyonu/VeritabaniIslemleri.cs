@@ -10,6 +10,36 @@ namespace SanalSınıfOtomasyonu
 {
     public static class VeritabaniIslemleri
     {
+
+        public static string degistir(string str)
+        {
+            string deger = str;
+
+            deger = deger.Replace("<", "");
+            deger = deger.Replace(">", "");
+            deger = deger.Replace("=", "");
+            deger = deger.Replace("?", "");
+            deger = deger.Replace("!", "");
+            deger = deger.Replace(";", "");
+            deger = deger.Replace(":", "");
+            deger = deger.Replace(",", "");
+            deger = deger.Replace("*", "");
+            deger = deger.Replace("+", "plus");
+            deger = deger.Replace("ı", "i");
+            deger = deger.Replace("ö", "o");
+            deger = deger.Replace("ü", "u");
+            deger = deger.Replace("ç", "c");
+            deger = deger.Replace("ş", "s");
+            deger = deger.Replace("ğ", "g");
+            deger = deger.Replace("Ğ", "g");
+            deger = deger.Replace("Ö", "o");
+            deger = deger.Replace("İ", "i");
+            deger = deger.Replace("Ü", "u");
+            deger = deger.Replace("#", "sarp");
+            deger = new System.Text.RegularExpressions.Regex("[^a-zA-Z0-9+]").Replace(deger, "-");
+            
+            return deger;
+        }
         private static readonly string _connectionString = @"Data Source=; Initial Catalog=SanalSinifDB; Integrated Security=true;";
 
         public static Int32 ExecuteNonQuery(String commandText,

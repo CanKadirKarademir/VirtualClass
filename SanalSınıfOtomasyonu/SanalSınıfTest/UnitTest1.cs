@@ -23,8 +23,8 @@ namespace SanalSınıfTest
         [TestMethod]
         public void TestMethod3()
         {
-            Login login = new Login();
-            login.Show();
+            ButtonTester buttonTester = new ButtonTester("button2");
+            buttonTester.Click();
         }
     }
 }
