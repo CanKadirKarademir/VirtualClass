@@ -36,7 +36,7 @@ namespace SanalSınıfOtomasyonu
                     Ogretmen ogr = new Ogretmen
                     {
                         KullaniciAd = dataTable.Rows[0]["KullaniciAd"].ToString(),
-                        KullaniciAdSoyad = dataTable.Rows[0]["KullaniciSoyad"].ToString(),
+                        KullaniciAdSoyad = dataTable.Rows[0]["KullaniciAdSoyad"].ToString(),
                         KullaniciId = Convert.ToInt32(dataTable.Rows[0]["KullaniciId"]),
                         KullaniciSifre = dataTable.Rows[0]["KullaniciSifre"].ToString(),
                         DersId = Convert.ToInt32(dataTable.Rows[0]["DersId"]),
@@ -51,7 +51,7 @@ namespace SanalSınıfOtomasyonu
                     Ogrenci ogr = new Ogrenci
                     {
                         KullaniciAd = dataTable.Rows[0]["KullaniciAd"].ToString(),
-                        KullaniciAdSoyad = dataTable.Rows[0]["KullaniciSoyad"].ToString(),
+                        KullaniciAdSoyad = dataTable.Rows[0]["KullaniciAdSoyad"].ToString(),
                         KullaniciId = Convert.ToInt32(dataTable.Rows[0]["KullaniciId"]),
                         KullaniciSifre = dataTable.Rows[0]["KullaniciSifre"].ToString(),
                         OgrenciId = Convert.ToInt32(dataTable.Rows[0]["OgrenciId"]),
@@ -66,6 +66,18 @@ namespace SanalSınıfOtomasyonu
                 XtraMessageBox.Show("Kullanıcı bilgileri yanlış girildi...", "Hatalı Giriş!", MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OgretmenSayfasi ogretmenSayfasi=new OgretmenSayfasi();
+            ogretmenSayfasi.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OgrenciSayfasi ogrenciSayfasi=new OgrenciSayfasi();
+            ogrenciSayfasi.Show();
         }
     }
 }

@@ -6,11 +6,15 @@ using DevExpress.XtraEditors;
 
 namespace SanalSınıfOtomasyonu
 {
-    public partial class OgretmenSayfasi : DevExpress.XtraEditors.XtraForm
+    public partial class OgretmenSayfasi : XtraForm
     {
+        public OgretmenSayfasi()
+        {
+            
+        }
         private Ogretmen _ogretmen;
         private Soru _soru = new Soru();
-        private  Ogrenci _ogrenci =new Ogrenci();
+        private Ogrenci _ogrenci = new Ogrenci();
 
         public OgretmenSayfasi(Ogretmen ogretmen)
         {
@@ -18,7 +22,6 @@ namespace SanalSınıfOtomasyonu
 
             InitializeComponent();
         }
-
         private void OgretmenSayfasi_Load(object sender, EventArgs e)
         {
             SqlParameter[] parameter = new SqlParameter[]
@@ -28,7 +31,7 @@ namespace SanalSınıfOtomasyonu
             parameter[0].Value = Convert.ToInt32(_ogretmen.DersId);
 
             lookUpTur.Properties.DataSource = VeritabaniIslemleri.ExecuteDataTable(
-                "select KonuId as 'Konu Kodu', KonuTuru as 'Konu Türü' From Konular where DersId=@DersId", parameter);
+                 @"select KonuId as 'Konu Kodu', KonuTuru as 'Konu Türü' From Konular where DersId=@DersId", parameter);
             lookUpTur.Properties.DisplayMember = "Konu Türü";
             lookUpTur.Properties.ValueMember = "Konu Kodu";
             GridSoruYukleme();
@@ -48,9 +51,9 @@ namespace SanalSınıfOtomasyonu
         public Boolean KontrolEt()
         {
             bool isTrue = true;
-
-            if (lookUpTur.ItemIndex == null || txtSoru.Text == null || txtA.Text == null || txtB.Text == null ||
-                txtC.Text == null || txtD.Text == null || cmbDogruCevap.SelectedItem == null)
+            
+            if (lookUpTur.ItemIndex ==0|| txtSoru.Text =="" || txtA.Text == "" || txtB.Text == "" ||
+                txtC.Text == "" || txtD.Text == "" || cmbDogruCevap.SelectedItem == null)
                 isTrue = false;
             else
                 isTrue = true;
@@ -214,7 +217,7 @@ namespace SanalSınıfOtomasyonu
 
         private void gridOgrenciBilgileri_Click(object sender, EventArgs e)
         {
-            _ogrenci.OgrenciNo = Convert.ToInt32(gridView2.GetFocusedRowCellValue("OgrenciNo").ToString()); 
+            _ogrenci.OgrenciNo = Convert.ToInt32(gridView2.GetFocusedRowCellValue("OgrenciNo"));
             _ogrenci.KullaniciAdSoyad = gridView2.GetFocusedRowCellValue("KullaniciAdSoyad").ToString();
             _ogrenci.KullaniciAd = gridView2.GetFocusedRowCellValue("KullaniciAd").ToString();
             _ogrenci.KullaniciId = Convert.ToInt32(gridView2.GetFocusedRowCellValue("KullaniciId"));
@@ -224,8 +227,11 @@ namespace SanalSınıfOtomasyonu
             txtKullaniciAdi.Text = _ogrenci.KullaniciAd;
             txtOgrenciNo.Text = _ogrenci.OgrenciNo.ToString();
             txtOgrenciAdSoyad.Text = _ogrenci.KullaniciAdSoyad;
+        }
+
+        private void btnIstatistik_Click(object sender, EventArgs e)
+        {
 
         }
     }
 }
-

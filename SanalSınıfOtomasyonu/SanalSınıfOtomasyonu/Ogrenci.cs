@@ -15,5 +15,13 @@ namespace SanalSınıfOtomasyonu
         {
             return false;
         }
+        public Sinav Sinav { get; set; }
+
+        public void SinavBaslat(int kullaniciId)
+        {
+            Sinav item = new Sinav();
+            item.SoruOlustur(kullaniciId);
+            Sinav = item;
+        }
     }
 }

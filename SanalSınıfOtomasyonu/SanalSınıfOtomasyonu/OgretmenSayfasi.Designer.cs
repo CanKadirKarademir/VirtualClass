@@ -67,16 +67,16 @@
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             this.btnIstatistik = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.txtKullaniciAdi = new DevExpress.XtraEditors.TextEdit();
             this.txtOgrenciAdSoyad = new DevExpress.XtraEditors.TextEdit();
             this.txtOgrenciNo = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.gridOgrenciBilgileri = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.txtKullaniciAdi = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
@@ -103,11 +103,11 @@
             this.xtraTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOgrenciAdSoyad.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOgrenciNo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridOgrenciBilgileri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // xtraTabControl1
@@ -214,12 +214,12 @@
             // 
             // txtSoru
             // 
-            this.txtSoru.Location = new System.Drawing.Point(124, 50);
+            this.txtSoru.Location = new System.Drawing.Point(20, 41);
             this.txtSoru.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSoru.Name = "txtSoru";
             this.txtSoru.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSoru.Properties.Appearance.Options.UseFont = true;
-            this.txtSoru.Size = new System.Drawing.Size(478, 28);
+            this.txtSoru.Size = new System.Drawing.Size(692, 28);
             this.txtSoru.TabIndex = 11;
             // 
             // labelControl12
@@ -590,6 +590,7 @@
             this.btnIstatistik.Size = new System.Drawing.Size(236, 48);
             this.btnIstatistik.TabIndex = 2;
             this.btnIstatistik.Text = "İstatistik Göster";
+            this.btnIstatistik.Click += new System.EventHandler(this.btnIstatistik_Click);
             // 
             // groupControl3
             // 
@@ -605,6 +606,16 @@
             this.groupControl3.Size = new System.Drawing.Size(391, 255);
             this.groupControl3.TabIndex = 1;
             this.groupControl3.Text = "Ögrenci  Bilgileri:";
+            // 
+            // txtKullaniciAdi
+            // 
+            this.txtKullaniciAdi.Location = new System.Drawing.Point(165, 166);
+            this.txtKullaniciAdi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtKullaniciAdi.Name = "txtKullaniciAdi";
+            this.txtKullaniciAdi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtKullaniciAdi.Properties.Appearance.Options.UseFont = true;
+            this.txtKullaniciAdi.Size = new System.Drawing.Size(172, 28);
+            this.txtKullaniciAdi.TabIndex = 5;
             // 
             // txtOgrenciAdSoyad
             // 
@@ -625,6 +636,17 @@
             this.txtOgrenciNo.Properties.Appearance.Options.UseFont = true;
             this.txtOgrenciNo.Size = new System.Drawing.Size(172, 28);
             this.txtOgrenciNo.TabIndex = 3;
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl11.Appearance.Options.UseFont = true;
+            this.labelControl11.Location = new System.Drawing.Point(41, 169);
+            this.labelControl11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(101, 22);
+            this.labelControl11.TabIndex = 2;
+            this.labelControl11.Text = "Kullanıcı Adı:";
             // 
             // labelControl10
             // 
@@ -675,27 +697,6 @@
             // 
             this.sqlDataSource1.Name = "sqlDataSource1";
             // 
-            // txtKullaniciAdi
-            // 
-            this.txtKullaniciAdi.Location = new System.Drawing.Point(165, 166);
-            this.txtKullaniciAdi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtKullaniciAdi.Name = "txtKullaniciAdi";
-            this.txtKullaniciAdi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtKullaniciAdi.Properties.Appearance.Options.UseFont = true;
-            this.txtKullaniciAdi.Size = new System.Drawing.Size(172, 28);
-            this.txtKullaniciAdi.TabIndex = 5;
-            // 
-            // labelControl11
-            // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(41, 169);
-            this.labelControl11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(101, 22);
-            this.labelControl11.TabIndex = 2;
-            this.labelControl11.Text = "Kullanıcı Adı:";
-            // 
             // OgretmenSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -740,11 +741,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOgrenciAdSoyad.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtOgrenciNo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridOgrenciBilgileri)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKullaniciAdi.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
